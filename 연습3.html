@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ex-layout {
+            width: 600px;
+            height: 1000px;
+            text-align: center;
+        }
+        .header {
+        width: 500px;
+        height: 50px;
+        background: blue;
+        font-weight: bold;
+    }
+    .header .nav {
+        width: 380px;
+        height: 40px;
+        background: red;
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+    .main {
+        width: 500px;
+        height: 1000px;
+        font-weight: bold;
+    }
+    .main .section {
+        float: left;
+        width: 420px;
+        height: 300px;
+        background: green;
+    }
+    .main .section .article {
+        width: 360px;
+        margin-left: 50px;
+    }
+    .main .section .list {
+        list-style-type: none;
+    }
+    #ar1 {
+        width: 320px;
+        height: 90px;
+        background: greenyellow;
+    }
+    #ar2 {
+        width: 320px;
+        height: 90px;
+        background: plum;
+    }
+    #ar3 {
+        width: 320px;
+        height: 90px;
+        background: lightblue;
+    }
+    .main .aside {
+        float: left;
+        width: 80px;
+        height: 300px;
+        background: white;
+    }
+    .main .footer {
+        float: left;
+        width: 500px;
+        height: 20px;
+        background: purple;
+    }
+        </style>
+</head>
+<body>
+    <div class="ex-layout">
+        <div class="header">
+            header
+            <p class="nav">nav</p>
+        </div>
+        <div class="main">
+            <div class="section">
+                section
+                <div class="article">
+                    <div class="ar" id="ar1">article</div>
+                    <div class="ar" id="ar2">article</div>
+                    <div class="ar" id="ar3">article</div>
+                </div>
+                <!-- <ul class="list">
+                    <li id="ar1">article</li>
+                    <li id="ar2">article</li>
+                    <li id="ar3">article</li>
+                </ul> -->
+            </div>
+            <div class="aside">aside</div>
+            <div class="footer">footer</div>
+        </div>
+    </div>
+</body>
+</html>

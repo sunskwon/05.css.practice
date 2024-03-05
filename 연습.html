@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ex-layout{ 
+            width: 800px;
+            height: 1000px }
+	.header{
+		width: 480px;
+		height: 45px;
+		background-color: blue;
+        font-weight: bold;
+	}
+	.main .nav{
+		float: left;
+		width: 70px;
+		height: 270px;
+		background-color: red;
+        font-weight: bold;
+	}
+	.main .content{
+		float: left;
+		width: 340px;
+		height: 270px;
+	}
+	.main .content .section{
+		height: 270px;
+		background-color: green;
+        font-weight: bold;
+	}
+    .main .content .section .article {
+        width: 300px;
+        margin-top: 5px;
+        margin-left: 14px;
+    }
+    .main .content .section .list {
+        width: 305px;
+    }
+    #ar1 {
+        width: 310px;
+        height: 78px;
+        background-color: yellowgreen;
+        list-style-type: none;
+        font-weight: bold;
+    }
+    #ar2 {
+        width: 310px;
+        height: 78px;
+        background-color: plum;
+        list-style-type: none;
+        font-weight: bold;
+    }
+    #ar3 {
+        width: 310px;
+        height: 78px;
+        background-color: lightblue;
+        list-style-type: none;
+        font-weight: bold;
+    }
+    .main .aside{
+        float: left;
+		width: 70px;
+		height: 270px;
+		background-color: white;
+        font-weight: bold;
+    }
+    .main .footer{
+        float:left;
+        width: 480px;
+		height: 20px;
+		background-color: purple;
+        font-weight: bold;
+	}
+    </style>
+</head>
+<body>
+    <div class="ex-layout">
+		<div class="header">header</div>
+		<div class="main">
+            <div class="nav">nav</div>
+			<div class="content">
+                <div class="section">
+                    section
+                    <div class="article">
+                        <div class="ar" id="ar1">article</div>
+                        <div class="ar" id="ar2">article</div>
+                        <div class="ar" id="ar3">article</div>
+                    </div>
+                    <!-- <ul class="list">
+                        <li id="ar1">article</li>
+                        <li id="ar2">article</li>
+                        <li id="ar3">article</li>
+                    </ul> -->
+                </div>
+			</div>
+            <div class="aside">aside</div>
+            <div class="footer">footer</div>
+		</div>
+	</div>
+</body>
+</html>
